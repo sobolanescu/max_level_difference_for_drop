@@ -12,7 +12,7 @@ Add:
 #ifdef ENABLE_DROP_EVENT
 		int limita_nivele_drop = (pkChr->GetLevel() - pkKiller->GetLevel());
 
-		if ((!(limita_nivele_drop > ENABLE_DROP_EVENT_MAX_DIFFERENCE)) && !(limita_nivele_drop < -ENABLE_DROP_EVENT_MAX_DIFFERENCE))
+		if ((!(limita_nivele_drop > 30)) && !(limita_nivele_drop < -30))
 		{
 #ifdef ENABLE_MOONLIGHT_CHEST_DROP
 			if (quest::CQuestManager::instance().GetEventFlag("event_moonlight_chest") == 1)
